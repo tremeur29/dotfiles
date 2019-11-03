@@ -83,5 +83,6 @@ main() {
 }
 
 # Call main function
+export LANG=c  # Force locale
 main
 
