@@ -12,3 +12,10 @@ Simply place the `lfetch` file in a location that is in your PATH. Run `lfetch` 
 # Customization
 
 All customization can be done by modifying the script. The entries and their colours are defined between line 51 and 63.
+
+# Known quirks
+
+- Script doesn't run on SH due to implementing Bash features.
+- Getting the distro name via `/etc/os-release` is unreliable.
+- Some entries are created by running `gawk` on existing commands, changes to the commands' output can break the script.
+- Colour bar is hardcoded.
