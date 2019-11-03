@@ -16,7 +16,12 @@ ram_total() {
 
 # Get WM name (Requires wmctrl to be installed!)
 wm_name() {
-	awk '/Name:/ {print $2}' <(wmctrl -m)
+	if [ -x "$(command -v wmctrl)" ]
+	then
+		awk '/Name:/ {print $2}' <(wmctrl -m)
+	else
+		echo "Unknown (Is wmctrl installed?)"
+	fi
 }
 
 # Store OS info (DOES NOT WORK ON ALL SYSTEMS!)
