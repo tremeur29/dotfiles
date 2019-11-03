@@ -1,5 +1,5 @@
 # 'Lil Fetch
-## A tiny little fetch tool
+A tiny little fetch tool
 
 This script outputs system information to a terminal and a coloured bar to show off your terminal colours.
 
