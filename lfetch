@@ -26,12 +26,12 @@ os_info() {
 
 # Get shell version
 shell_version() {
-	case $(basename $SHELL) in
+	case $(basename "$SHELL") in
 		"bash")
 			echo "Bash $BASH_VERSION"
 			;;
 		"zsh")
-			echo "$(zsh --version)"
+			zsh --version
 			;;
 		*)
 			echo "$SHELL"
