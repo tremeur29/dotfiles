@@ -69,12 +69,12 @@ Sync
 ${exec command insync get_sync_progress}
 $hr
 Calendar
-${exec command ~/.scripts/today.sh}
+${exec command ~/.linux/scripts/today.sh}
 $hr
 To do
 ${exec command ~/go/bin/todoist sync && ~/go/bin/todoist list --filter '(overdue | today)' | sed 's/^..............//' | sed 's/\#Inbox\ //g' | sed 's/\ ..\:..\ //g' | sort | sed 's/^.\{14\}//'}
 $hr
 Music
-${exec command ~/.scripts/nowplaying.sh}
-${execbar command ~/.scripts/cmus-conky/cmus-conky-timebar.sh}
+${exec command ~/.linux/scripts/nowplaying.sh}
+${execbar command ~/.linux/scripts/cmus-conky/cmus-conky-timebar.sh}
 ]]
