@@ -1,0 +1,18 @@
+include "%L"
+
+# CUSTOM COMBINATIONS
+<Multi_key> <a> <backslash>              	: "ɐ"   U0250
+<Multi_key> <r> <backslash>              	: "ɻ"   U027b
+<Multi_key> <v> <backslash>              	: "ʌ"   U028c
+<Multi_key> <w> <backslash>              	: "ʍ"   U028d 
+<Multi_key> <e> <p>              	: "ɛ"   U025b 
+<Multi_key> <g> <g>              	: "ɡ"   U0261 
+<Multi_key> <I> <I>              	: "ɪ"   U026a 
+<Multi_key> <o> <h>              	: "ɔ"   U0254 
+<Multi_key> <s> <h>              	: "ʃ"   U0283 
+<Multi_key> <T> <h>              	: "θ"   U03b8 
+<Multi_key> <u> <o>              	: "ʊ"   U028a 
+<Multi_key> <backslash> <u>              	: "ʉ"   U0289 
+<Multi_key> <apostrophe> <bracketright>              	: "ˈ"   U02c8 
+<Multi_key> <colon> <colon>              	: "ː"   U02d0 
+<Multi_key> <g> <h>              	: "ʒ"   U0292 
