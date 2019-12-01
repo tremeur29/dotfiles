@@ -1,0 +1,7 @@
+fset bern=(genre="Bristol"|artist="Steve Hillage"|album="My Favorite Things"|artist="Dalla"|artist="Sonerien Du"|album="Psychedelic Jazz"|album="Tour De France Soundtracks"|artist="Roni Size/Reprazent"|artist="Anao Atao"|artist="Hawkwind"|album="Mammyk Ker"|album="Dehwelans")
+
+fset celt=(genre="Cornish"|genre="Breton"|genre="Celtic")
+
+fset classical=(genre="Chamber"|genre="Concerto"|genre="Experimental"|genre="Harpsichord"|genre="Instrumental"|genre="Madrigal"|genre="Motet"|genre="Opera"|genre="Oratorio"|genre="Orchestral"|genre="Organ"|genre="Piano"|genre="Sacred"|genre="Secular choral"|genre="Symphony"|genre="Vocal")
+
+fset popular=!(genre="Chamber"|genre="Concerto"|genre="Experimental"|genre="Harpsichord"|genre="Instrumental"|genre="Madrigal"|genre="Motet"|genre="Opera"|genre="Oratorio"|genre="Orchestral"|genre="Organ"|genre="Piano"|genre="Sacred"|genre="Secular choral"|genre="Symphony"|genre="Vocal"|genre="Christmas")
