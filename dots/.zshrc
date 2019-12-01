@@ -8,12 +8,6 @@ export ZSH="${HOME}/.oh-my-zsh"
 
 # export GOPATH=$HOME/Appsetc/go
 
-gitwho(){if git rev-parse --git-dir > /dev/null 2>&1; then
-  git config user.name;
-else
-fi;
-}
-
 POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir custom_prompt)
