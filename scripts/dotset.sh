@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mv ~/mdddots ~/.linux
 
 ln -s ~/.linux/dots/.zshrc ~
