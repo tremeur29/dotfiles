@@ -6,7 +6,7 @@
 mv ~/mdddots ~/.linux
 
 # Get rid of existing files
-rm ~/.zshrc ~/.gitconfig ~./XCompose ~/.conkyrc
+rm ~/.zshrc ~/.gitconfig ~/.XCompose ~/.conkyrc
 rm ~/.config/cmus/rc
 rm ~/.oh-my-zsh/custom/aliases
 
