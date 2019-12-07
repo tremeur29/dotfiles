@@ -15,7 +15,7 @@ ln -s ~/.linux/dots/.zshrc ~
 ln -s ~/.linux/dots/aliases ~/.oh-my-zsh/custom
 ln -s ~/.linux/dots/.gitconfig ~
 ln -s ~/.linux/dots/.XCompose ~
-mkdir =p ~/.config/cmus
+mkdir -p ~/.config/cmus
 ln -s ~/.linux/dots/cmus/rc ~/.config/cmus
 
 ## Prepare for colorus
