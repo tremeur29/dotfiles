@@ -28,12 +28,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 conky.config = {
     alignment = 'top_left',
     background = false,
-    border_width = 1,
+    border_width = 7,
     cpu_avg_samples = 2,
-	default_color = 'black',
-    default_outline_color = 'grey',
-    default_shade_color = 'grey',
-    draw_borders = false,
+    default_color = 'COLOURTEMPLATE',
+    draw_borders = true,
     draw_graph_borders = true,
     draw_outline = false,
     draw_shades = false,
@@ -52,20 +50,20 @@ conky.config = {
     own_window_class = 'Conky',
     own_window_type = 'desktop',
     own_window_transparent = false,
-    own_window_argb_visual = true,
-    own_window_argb_value = 100,
-    own_window_colour = '87875f',
+    own_window_argb_visual = false,
+    own_window_colour = 'white',
     stippled_borders = 0,
     update_interval = 1.0,
     uppercase = false,
     use_spacer = 'none',
     show_graph_scale = false,
     show_graph_range = false,
-    use_xft = true
+    use_xft = true,
+    color1 = 'black',
 }
 
 conky.text = [[
-Sync
+${color1}Sync
 ${exec command insync get_sync_progress}
 $hr
 Calendar
@@ -76,5 +74,5 @@ ${exec command ~/go/bin/todoist sync && ~/go/bin/todoist list --filter '(overdue
 $hr
 Music
 ${exec command ~/.linux/scripts/nowplaying.sh}
-${execbar command ~/.linux/scripts/cmus-conky/cmus-conky-timebar.sh}
+${execbar command ~/.linux/scripts/cmus-conky-timebar.sh}
 ]]
