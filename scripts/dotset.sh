@@ -16,3 +16,6 @@ ln -s ~/.linux/dots/aliases ~/.oh-my-zsh/custom
 ln -s ~/.linux/dots/.gitconfig ~
 ln -s ~/.linux/dots/.XCompose ~
 ln -s ~/.linux/dots/cmus/rc ~/.config/cmus
+
+## Prepare for colorus
+touch ~/.colourvars
