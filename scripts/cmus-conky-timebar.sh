@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# from https://github.com/TiredSounds/cmus-conky
+
 ## Gets current track time for a bar in Conky.
 ## Usage: Put ${execbar /path/to/script} in your .conkyrc. 
 ## It might be useful to use ${goto x} or ${voffset x} to adjust position, and ${color #xxxxxx} for color.
