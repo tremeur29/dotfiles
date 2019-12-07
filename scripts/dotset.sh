@@ -6,9 +6,9 @@
 mv ~/mdddots ~/.linux
 
 # Get rid of existing files
-rm ~/.zshrc ~/.gitconfig ~/.XCompose
-rm ~/.config/cmus/rc
-rm ~/.oh-my-zsh/custom/aliases
+rm -f ~/.zshrc ~/.gitconfig ~/.XCompose
+rm -f ~/.config/cmus/rc
+rm -f ~/.oh-my-zsh/custom/aliases
 
 # Symlink files from git repo
 ln -s ~/.linux/dots/.zshrc ~
