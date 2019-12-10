@@ -1,5 +1,7 @@
+synclient MaxTapTime=0 &
 xcompmgr &
 wal --vte  -R &
+plank &
 pnmixer &
 conky &
 tint2 &

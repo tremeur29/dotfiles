@@ -1,0 +1,47 @@
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 10px;
+}
+
+headerbar {
+  min-height: 16px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@define-color decoration_border_color COLOUR;
+
+/* focused window */
+decoration {
+    border: 5px solid @decoration_border_color;
+    background: @decoration_border_color;
+}
+
+/* unfocused window */
+decoration:backdrop {
+    border-color: @decoration_border_color;
+    background-color: @decoration_border_color;
+}
+
+/* focused window (server-side rendering hack) */
+.ssd .titlebar {
+    border: 5px solid @decoration_border_color;
+    border-bottom: none;
+}
+
+/* unfocused window (server-side rendering hack) */
+.ssd .titlebar:backdrop {
+    border-color: @decoration_border_color;
+}
+
+/* remove borders of maximized windows */
+.maximized decoration,
+.ssd.maximized .titlebar {
+    border: none
+}
