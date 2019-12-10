@@ -14,6 +14,7 @@ rm -f ~/.config/rofi/config.rasi
 rm -f ~/.config/gtk-3.0/settings.ini
 rm -f ~/.config/gtk-3.0/gtk.css
 rm -f ~/.config/gtk-4.0/settings.ini
+rm -f ~/.config/fontconfig/fonts.conf
 
 # Symlink files from git repo
 ln -s ~/.linux/dots/.zshrc ~
@@ -33,6 +34,8 @@ ln -s ~/.linux/dots/gtk/3/settings.ini ~/.config/gtk-3.0
 ln -s ~/.linux/dots/gtk/3/gtk.css ~/.config/gtk-3.0
 mkdir -p ~/.config/gtk-4.0
 ln -s ~/.linux/dots/gtk/4/settings.ini ~/.config/gtk-4.0
+mkdir -p ~/.config/fontconfig
+ln -s ~/.linux/dots/fonts.conf ~/.config/fontconfig
 
 ## Prepare for colorus
 touch ~/.colourvars
