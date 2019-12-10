@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Get the variable
-csub=$(sed '2!d' ~/.cache/wal/colors)
+csub=$(sed '6!d' ~/.cache/wal/colors)
 
 # Create new tint2rc
 mkdir -p ~/.config/tint2

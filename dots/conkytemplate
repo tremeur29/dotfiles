@@ -37,7 +37,7 @@ conky.config = {
     draw_shades = false,
     double_buffer = true,
     use_xft = true,
-    font = 'Inconsolata:size=9',
+    font = 'InconsolataLGC Nerd Font Mono:size=9',
     gap_x = 25,
     gap_y = 40,
 	minimum_width = 5,
