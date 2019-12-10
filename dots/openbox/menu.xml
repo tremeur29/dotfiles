@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Web">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+  <!-- This requires the presence of the 'openbox-menu' package to work -->
+  <menu id="/Debian" />
+  <separator />
+  <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
+  <separator />
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <separator />
+  <item label="Log out">
+    <action name="Exit" />
+  </item>
+  <item label="Restart">
+    <action name="Execute">
+      <prompt>Restart computer?</prompt>
+      <execute>systemctl reboot</execute>
+    </action>
+  </item>
+  <item label="Shut down">
+    <action name="Execute">
+      <prompt>Shut down computer?</prompt>
+      <execute>systemctl poweroff</execute>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>
