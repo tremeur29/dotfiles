@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="${PATH}:${HOME}/.local/bin/"
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
 (cat ~/.cache/wal/sequences &)
 
 # Path to your oh-my-zsh installation.
