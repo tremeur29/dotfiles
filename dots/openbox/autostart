@@ -1,7 +1,9 @@
-synclient MaxTapTime=0 &
+~/.config/openbox/autostart-specific.sh
 xcompmgr &
+redshift &
 wal --vte  -R &
 plank &
 pnmixer &
-conky &
+conky -p 30 &
 tint2 &
+insync start &

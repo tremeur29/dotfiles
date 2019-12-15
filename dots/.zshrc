@@ -96,3 +96,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Set location of aliases
 . ~/.oh-my-zsh/custom/aliases
+. ~/.oh-my-zsh/custom/aliases-specific
