@@ -8,6 +8,8 @@ export PATH="$HOME/gems/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
 
+export EDITOR=emacs
+
 # export GOPATH=$HOME/Appsetc/go
 
 POWERLEVEL9K_MODE='nerdfont-complete'
