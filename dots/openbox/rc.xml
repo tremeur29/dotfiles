@@ -276,11 +276,13 @@
         <command>scrot -s</command>
       </action>
     </keybind>
+    <!--don’t need rofi as well as right-click menu really
     <keybind key="C-space">
       <action name="Execute">
         <command>rofi -show run</command>
       </action>
-    </keybind>
+      </keybind>
+    -->
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
