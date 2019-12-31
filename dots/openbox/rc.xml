@@ -251,13 +251,13 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="C-q">
+    <keybind key="C-S-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="C-m">
+    <keybind key="C-S-m">
       <action name="Iconify"/>
     </keybind>
-    <keybind key="C-S-m">
+    <keybind key="C-S-A-m">
       <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="A-Escape">
