@@ -407,6 +407,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      <!-- disabling this for emacs
       <mousebind button="A-S-Up" action="Click">
         <action name="SendToDesktop">
           <to>previous</to>
@@ -416,7 +417,8 @@
         <action name="SendToDesktop">
           <to>next</to>
         </action>
-      </mousebind>
+	</mousebind>
+	-->
     </context>
     <context name="Titlebar">
       <mousebind button="Left" action="Drag">
