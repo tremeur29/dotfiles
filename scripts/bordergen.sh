@@ -11,12 +11,6 @@ rm -f ~/.config/tint2/tint2rc
 mv ~/.config/tint2/plac ~/.config/tint2/tint2rc
 killall -SIGUSR1 tint2
 
-# Create new .conkyrc
-cp ~/.linux/dots/conkytemplate ~/conkyplac
-sed -i "s/COLOURTEMPLATE/${csub}/g" ~/conkyplac
-rm -f ~/.conkyrc
-mv ~/conkyplac ~/.conkyrc
-
 # Create new gtk css
 cp ~/.linux/dots/gtk/3/gtktemplate.css ~/.config/gtk-3.0/gtkplac.css
 sed -i "s/COLOUR/${csub}/g" ~/.config/gtk-3.0/gtkplac.css
