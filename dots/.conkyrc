@@ -37,7 +37,7 @@ conky.config = {
     draw_shades = false,
     double_buffer = true,
     use_xft = true,
-    font = 'InconsolataLGC Nerd Font Mono:size=9',
+    font = 'VictorMono Nerd Font:size=9',
     gap_x = 30,
     gap_y = 25,
 	minimum_width = 5,
@@ -62,16 +62,16 @@ conky.config = {
 }
 
 conky.text = [[
-Sync
-${exec command insync get_sync_progress}
+${font VictorMono Nerd Font:size=9:bold}Sync
+${font VictorMono Nerd Font:size=9:regular}${exec command insync get_sync_progress}
 $hr
-Calendar
-${exec command ~/.linux/scripts/today.sh}
+${font VictorMono Nerd Font:size=9:bold}Calendar
+${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/today.sh}
 $hr
-To do
-${exec command ~/go/bin/todoist sync && ~/go/bin/todoist list --filter '(overdue | today)' | sed 's/^..............//' | sed 's/\#Inbox\ //g' | sed 's/\ ..\:..\ //g' | sort | sed 's/^.\{14\}//'}
+${font VictorMono Nerd Font:size=9:bold}To do
+${font VictorMono Nerd Font:size=9:regular}${exec command ~/go/bin/todoist sync && ~/go/bin/todoist list --filter '(overdue | today)' | sed 's/^..............//' | sed 's/\#Inbox\ //g' | sed 's/\ ..\:..\ //g' | sort | sed 's/^.\{14\}//'}
 $hr
-Music
-${exec command ~/.linux/scripts/nowplaying.sh}
+${font VictorMono Nerd Font:size=9:bold}Music
+${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/nowplaying.sh}
 ${execbar command ~/.linux/scripts/cmus-conky-timebar.sh}
 ]]

@@ -148,10 +148,10 @@ launcher_item_app = x-terminal-emulator.desktop
 # Clock
 time1_format = %H:%M
 time2_format = %-d/%-m/%y
-time1_font = InconsolataLGC Nerd Font Mono Bold 10
+time1_font = VictorMono Nerd Font Bold 10
 time1_timezone = 
 time2_timezone = 
-time2_font = InconsolataLGC Nerd Font Mono Medium 8
+time2_font = VictorMono Nerd Font 8
 clock_font_color = #000000 100
 clock_padding = 3 3
 clock_background_id = 2

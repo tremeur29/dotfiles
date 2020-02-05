@@ -57,7 +57,7 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -66,16 +66,16 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>italic</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -84,7 +84,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -93,7 +93,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
@@ -102,12 +102,12 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>InconsolataLGC Nerd Font Mono</name>
+      <name>VictorMono Nerd Font</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>italic</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
