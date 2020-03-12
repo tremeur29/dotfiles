@@ -65,11 +65,8 @@ conky.text = [[
 ${font VictorMono Nerd Font:size=9:bold}Sync
 ${font VictorMono Nerd Font:size=9:regular}${exec command insync get_sync_progress}
 $hr
-${font VictorMono Nerd Font:size=9:bold}Calendar
+${font VictorMono Nerd Font:size=9:bold}Agenda
 ${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/today.sh}
-$hr
-${font VictorMono Nerd Font:size=9:bold}To do
-${font VictorMono Nerd Font:size=9:regular}${exec command ~/go/bin/todoist sync && ~/go/bin/todoist list --filter '(overdue | today)' | sed 's/^..............//' | sed 's/\#Inbox\ //g' | sed 's/\ ..\:..\ //g' | sort | sed 's/^.\{14\}//'}
 $hr
 ${font VictorMono Nerd Font:size=9:bold}Music
 ${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/nowplaying.sh}
