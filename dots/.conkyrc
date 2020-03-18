@@ -62,9 +62,9 @@ conky.config = {
 }
 
 conky.text = [[
-${font VictorMono Nerd Font:size=9:bold}Sync
-${font VictorMono Nerd Font:size=9:regular}${exec command insync get_sync_progress}
-$hr
+# ${font VictorMono Nerd Font:size=9:bold}Sync
+# ${font VictorMono Nerd Font:size=9:regular}${exec command insync get_sync_progress}
+# $hr insync very stupidly got rid of this feature in version 3
 ${font VictorMono Nerd Font:size=9:bold}Agenda
 ${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/today.sh}
 $hr
