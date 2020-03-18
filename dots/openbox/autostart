@@ -1,9 +1,10 @@
-~/.config/openbox/autostart-specific.sh
 xcompmgr &
 redshift &
+~/.fehbg &
 wal --vte  -R &
 plank &
 pnmixer &
 conky -p 30 &
 tint2 &
 insync start &
+~/.config/openbox/autostart-specific.sh &
