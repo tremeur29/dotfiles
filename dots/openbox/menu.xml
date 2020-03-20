@@ -24,6 +24,12 @@
   <item label="Log out">
     <action name="Exit" />
   </item>
+  <separator />
+    <item label="Sleep">
+    <action name="Execute">
+      <execute>systemctl suspend</execute>
+    </action>
+  </item>
   <item label="Restart">
     <action name="Execute">
       <prompt>Restart computer?</prompt>
