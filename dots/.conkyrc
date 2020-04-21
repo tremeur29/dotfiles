@@ -37,7 +37,7 @@ conky.config = {
     draw_shades = false,
     double_buffer = true,
     use_xft = true,
-    font = 'VictorMono Nerd Font:size=9',
+    font = 'Noto Sans:size=9:style=Regular',
     gap_x = 30,
     gap_y = 25,
 	minimum_width = 5,
@@ -62,13 +62,13 @@ conky.config = {
 }
 
 conky.text = [[
-# ${font VictorMono Nerd Font:size=9:bold}Sync
-# ${font VictorMono Nerd Font:size=9:regular}${exec command insync get_sync_progress}
+# ${font Noto Sans:size=9:bold}Sync
+# ${font Noto Sans:size=9:regular}${exec command insync get_sync_progress}
 # $hr insync very stupidly got rid of this feature in version 3
-${font VictorMono Nerd Font:size=9:bold}Agenda
-${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/today.sh}
+${font Noto Sans:size=9:style=Bold}Agenda
+${font Noto Sans:size=9:style=Regular}${exec command ~/.linux/scripts/today.sh}
 $hr
-${font VictorMono Nerd Font:size=9:bold}Music
-${font VictorMono Nerd Font:size=9:regular}${exec command ~/.linux/scripts/nowplaying.sh}
+${font Noto Sans:size=9:style=Bold}Music
+${font Noto Sans CJK JP:size=9:style=Regular}${exec command ~/.linux/scripts/nowplaying.sh}
 ${execbar command ~/.linux/scripts/cmus-conky-timebar.sh}
 ]]
