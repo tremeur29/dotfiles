@@ -1,0 +1,36 @@
+# Emacs
+alias emacs="emacs26"
+
+# Cmus
+pl(){pgrep -x cmus >/dev/null && cmus-remote -u || echo "cmus is not running"}
+alias pa="pl"
+sk(){pgrep -x cmus >/dev/null && cmus-remote -n || echo "cmus is not running"}
+alias nowplaying="~/.linux/scripts/nowplaying.sh"
+
+# Other scripts
+alias fetch="~/.linux/scripts/lfetch/lfetch"
+pywal(){
+  wal --vte -li "$1"
+  feh --bg-fill "$1"
+  ~/.linux/scripts/colorus/convert.sh
+  wait
+  rm -f ~/.Xresources
+  echo Xcursor.theme: Suru >> ~/.cache/wal/colors.Xresources # will this mean it’s there multiple times??
+  cp -f ~/.cache/wal/colors.Xresources ~/.Xresources
+  obtgen
+  ~/.linux/scripts/bordergen.sh
+}
+alias cello="python3 ~/.linux/scripts/cellopractice.py"
+alias rcmus="~/.linux/scripts/cmus-refresh.sh"
+
+# Brevity
+alias giveme="find ~/Documents/drive | egrep -i"
+cdls(){
+  PATHO=$(realpath $1)
+  cd $PATHO && ls
+}
+
+# Troubleshooting
+alias rp="killall plank && nohup plank &"
+alias rck="killall conky && nohup conky &"
+alias rsw="nmcli radio wifi off && nmcli radio wifi on"

@@ -1,0 +1,3 @@
+[submodule "scripts/colorus"]
+	path = scripts/colorus
+	url = https://github.com/tremeur29/colorus

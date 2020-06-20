@@ -1,0 +1,11 @@
+[color]
+	ui = auto
+[core]
+	editor = nano -n -w
+[push]
+	default = upstream
+[merg]
+	conflictstyle = diff3
+[user]
+	email = eheu48@gmail.com
+	name = trémeur
