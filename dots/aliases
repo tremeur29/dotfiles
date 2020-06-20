@@ -34,3 +34,11 @@ cdls(){
 alias rp="killall plank && nohup plank &"
 alias rck="killall conky && nohup conky &"
 alias rsw="nmcli radio wifi off && nmcli radio wifi on"
+
+gitwho(){
+if [ -d .git ]; then
+  echo $(git config user.name);
+else
+  git rev-parse --git-dir 2> /dev/null;
+fi;
+}
