@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pull submodule(s)
-cd ~/mdddots
+cd ~/dotfiles
 git submodule update --init
 cd -
 
@@ -123,7 +123,7 @@ touch ~/.oh-my-zsh/custom/aliases-specific
 touch ~/.colourvars
 
 # Rename the git repo
-mv ~/mdddots ~/.linux
+mv ~/dotfiles ~/.linux
 
 # Set cursor theme
 rm -f ~/.Xresources
