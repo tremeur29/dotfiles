@@ -42,10 +42,12 @@ sudo sed -i 's/XKBOPTIONS=""/XKBOPTIONS="compose:caps"/g' /etc/default/keyboard
 sudo pip3 install pywal
 
 # Install/set zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # say no for now; switch shell later
-exit # go back to bash
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh --unattended
+rm -f https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+chsh -s /bin/zsh
 
 # Download various packages from github
 mkdir -p ~/.gimp-2.8/scripts
