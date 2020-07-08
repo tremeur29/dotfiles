@@ -41,13 +41,12 @@ sudo sed -i 's/XKBOPTIONS=""/XKBOPTIONS="compose:caps"/g' /etc/default/keyboard
 # Install pip packages
 sudo pip3 install pywal
 
-# Install/set zsh
+# Install zsh (it gets set later)
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh --unattended
 rm -f https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-chsh -s /bin/zsh
 
 # Download various packages from github
 mkdir -p ~/.gimp-2.8/scripts
