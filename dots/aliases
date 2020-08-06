@@ -1,11 +1,12 @@
 # Emacs
 alias emacs="emacs26"
 
-# Cmus
+# Music
 pl(){pgrep -x cmus >/dev/null && cmus-remote -u || echo "cmus is not running"}
 alias pa="pl"
 sk(){pgrep -x cmus >/dev/null && cmus-remote -n || echo "cmus is not running"}
 alias nowplaying="~/.linux/scripts/nowplaying.sh"
+alias abcde="abcde -c ~/.linux/dots/abcde.conf" # abcde doesn’t automatically read its own config file for some reason
 
 # Other scripts
 alias fetch="~/.linux/scripts/lfetch/lfetch"

@@ -23,7 +23,7 @@ echo "deb http://apt.insync.io/$ID $VERSION_CODENAME non-free contrib" | sudo te
 sudo apt update
 
 # Install things
-sudo apt install arc-theme biber calibre chromium-browser cmus conky-all curl libcurl4-openssl-dev libnotify-dev emacs26 evince feh ffmpeg fonts-crosextra-carlito fonts-noto fonts-noto-color-emoji fonts-sil-andika fonts-sil-doulos geoclue-2.0 ghostscript gimp insync kid3-qt libreoffice openbox pandoc papirus-icon-theme plank pnmixer python-pip python2.7 python3 python3-venv python3-pip redshift-gtk ruby-full sakura spotify-client suru-icon-set texlive-extra-utils texlive-latex-extra texlive-xetex tex-gyre thunderbird tint2 tree vlc vlc-plugin-fluidsynth xcompmgr zotero zsh
+sudo apt install abcde arc-theme biber calibre chromium-browser cmus conky-all curl emacs26 evince eyed3 feh ffmpeg fonts-crosextra-carlito fonts-noto fonts-noto-color-emoji fonts-sil-andika fonts-sil-doulos geoclue-2.0 ghostscript gimp insync kid3-qt lame libcurl4-openssl-dev libnotify-dev libreoffice openbox pandoc papirus-icon-theme plank pnmixer python-pip python2.7 python3 python3-venv python3-pip redshift-gtk ruby-full sakura spotify-client suru-icon-set texlive-extra-utils texlive-latex-extra texlive-xetex tex-gyre thunderbird tint2 tree vlc vlc-plugin-fluidsynth xcompmgr zotero zsh
 # build-essential libsox-fmt-all sox xserver-xorg-core xserver-xlib-input-synaptics zlib1g-dev
 
 sudo apt update
