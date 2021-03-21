@@ -1,10 +1,10 @@
 xcompmgr &
 redshift &
-~/.fehbg &
-wal --vte  -R &
+~/.linux/scripts/randwal.sh
 plank &
 pnmixer &
-conky -p 30 &
 tint2 &
-insync start &
-~/.config/openbox/autostart-specific.sh &
+conky -p 30 &
+insync start
+~/.config/openbox/autostart-specific.sh
+~/.linux/scripts/randwal2.sh
