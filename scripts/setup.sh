@@ -19,11 +19,13 @@ wget -qO- https://github.com/retorquere/zotero-deb/releases/download/apt-get/ins
 . /etc/os-release
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
 echo "deb http://apt.insync.io/$ID $VERSION_CODENAME non-free contrib" | sudo tee /etc/apt/sources.list.d/insync.list
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
 sudo apt update
 
 # Install things
-sudo apt install abcde arc-theme biber calibre chromium-browser cmus conky-all curl emacs26 evince eyed3 feh ffmpeg fonts-crosextra-carlito fonts-noto fonts-noto-color-emoji fonts-sil-andika fonts-sil-doulos geoclue-2.0 ghostscript gimp insync kid3-qt lame libcurl4-openssl-dev libnotify-dev libreoffice openbox pandoc papirus-icon-theme plank pnmixer python-pip python2.7 python3 python3-venv python3-pip redshift-gtk ruby-full sakura spotify-client suru-icon-set texlive-extra-utils texlive-latex-extra texlive-xetex tex-gyre thunderbird tint2 tree vlc vlc-plugin-fluidsynth xcompmgr zotero zsh
+sudo apt install abcde arc-theme biber calibre cmus conky-all curl emacs26 evince eyed3 feh ffmpeg fonts-crosextra-carlito fonts-noto fonts-noto-color-emoji fonts-sil-andika fonts-sil-doulos geoclue-2.0 ghostscript gimp google-chrome insync kid3-qt lame libcurl4-openssl-dev libnotify-dev libreoffice openbox pandoc papirus-icon-theme plank pnmixer python-pip python2.7 python3 python3-venv python3-pip redshift-gtk ruby-full sakura spotify-client suru-icon-set texlive-extra-utils texlive-latex-extra texlive-xetex tex-gyre thunderbird tint2 tree vlc vlc-plugin-fluidsynth xcompmgr zotero zsh
 # build-essential libsox-fmt-all sox xserver-xorg-core xserver-xlib-input-synaptics zlib1g-dev
 
 sudo apt update
@@ -53,9 +55,9 @@ mkdir -p ~/.gimp-2.8/scripts
 curl https://api.github.com/repos/tshatrov/scriptfu/releases/latest | grep "browser_download_url.*scm" | cut -d : -f 2,3 | tr -d \" | wget -qi - 
 mv animstack.scm ~/.gimp-2.8/scripts/
 
-curl https://api.github.com/repos/getferdi/ferdi/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -qi - 
-sudo dpkg -i ferdi*.deb
-rm -f ferdi*.deb
+# curl https://api.github.com/repos/getferdi/ferdi/releases/latest | grep "browser_download_url.*deb" | cut -d : -f 2,3 | tr -d \" | wget -qi - 
+# sudo dpkg -i ferdi*.deb
+# rm -f ferdi*.deb
 
 git clone https://github.com/Arkq/cmusfm.git
 cd cmusfm
